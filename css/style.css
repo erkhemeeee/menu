@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/bg.jpg");
+}
+
+.container {
+  margin-top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#flipbook .page {
+  background: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.book_1,
+.book_2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.salt::after {
+  content: "Click me";
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  right: -20px;
+  width: 100px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     overflow: hidden;
+     // background-color: #000;
+     display: flex;
+     justify-content: center;
+     background-image: url("../img/bg.jpg");
+}
+#flipbook {
+}
+.container {
+     margin-top: 50vh;
+     transform: translateY(-50%);
+}
+#flipbook .page {
+     background: #fff;
+}
+
+#flipbook .shadow {
+     // box-shadow: 0 4px 10px #666;
+}
+img {
+     width: 100%;
+}
+
+.book_1,
+.book_2 {
+     // cursor: pointer;
+     position: relative;
+     overflow: hidden;
+}
+
+.salt::after {
+     content: "Click me";
+     position: absolute;
+     // z-index: 10;
+     top: 20px;
+     text-align: center;
+     right: -20px;
+     width: 100px;
+     height: 20px;
+     transform: rotate(45deg);
+     background-color: white;
+}
